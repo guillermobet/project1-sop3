@@ -53,11 +53,11 @@ class Peer(Agent):
 			action = int(self.menu())
 			message = Message(to='directoryserver@jabb3r.org')
 			if action == 1:
-				message.body = 'file//'
+				message.body = 'file'
 				await self.send(message)
 			elif action == 2:
 				print(message)
-				message.body = 'cpu//'
+				message.body = 'cpu'
 				print(message.body)
 				await self.send(message)
 			elif action == 9:
