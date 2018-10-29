@@ -20,8 +20,9 @@ class DummyAgent(Agent):
         self.add_behaviour(b)
 
 if __name__ == "__main__":
-    dummy = DummyAgent("foo", "bar")
+    dummy = DummyAgent("guillermobet@jabb3r.org", "guillebeta")
     dummy.start()
+    dummy.web.start(hostname="localhost", port="10000")
 
     print("Wait until user interrupts with ctrl+C")
     while True:

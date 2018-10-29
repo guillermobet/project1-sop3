@@ -1,2 +1,4 @@
-spade==3.0.8
+spade==3.0.9
 psutil==5.4.7
+coolname==1.1.0
+emoji==0.5.1
