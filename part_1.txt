@@ -1,0 +1,48 @@
+JACK Intelligent Agents:
+    Lenguaje: JAVA (crossplatform)
+    Licencia: Propietario
+    Desarrollado y mantenido por: AOS™
+    Proyectos relevantes:
+    Statoil (ahora Equinor ASA) desarrollo software basado en agentes para soportar sus operaciones de intercambio de       petroleo y asministración deoperaciones usando JACK.
+    Filosofía: Agentes
+
+
+JADE:
+	Lenguaje: JAVA (crossplatform)
+	Licencia: GPL
+	Desarrollado y mantenido por: Telecom Italia y comunidad open source
+	Proyectos relevantes: EDiM
+ 	Filosofía: Agentes en containers
+
+Repast:
+
+    Lenguaje: JAVA (Cross-platform)
+    Supports: Java, C#, Managed C++, Visual Basic.Net, Managed Lisp, Managed Prolog, and Python scripting, etc.
+    Proyectos relevantes:
+    Biotic Population Dynamics and the Theory of Evolution Hector Sabelli, Lazar Kovacevic. Abstract follows.
+    Filosofía: Agentes, Open source.
+        
+
+JACK Intelligent Systems:
+
+    Lenguaje: Java (Crosspladform)
+    Proyectos relevantes: Human Behaviour Representation
+
+SPADE:
+
+    Sistemas operativos: Linux, windows, solaris.
+    Filosofía: Comunicación P2P entre agentes, Invocación remota de servicios entre agentes usando el estándar XML-RPC.
+    Desarrollador: J. Palanca y G. Aranda
+        
+JaCaMo:
+
+    Lenguaje: JAVA
+    Sistemas operativos: Linux
+    Filosofía: Open source and under GNU LGPL.
+    Proyectos Interesantes: 
+    The JaCa programming model, Governance of Room Allocation in a Smart Co-working Space, JaCaMo-based Knoweldge           Management System.
+
+
+
+
+
