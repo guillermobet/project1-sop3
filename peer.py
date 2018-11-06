@@ -49,10 +49,10 @@ class Peer(Agent):
 
 				message = Message(to='directoryserver@jabb3r.org')
 				if action == 1:
-					message.body = 'findfile'
+					message.body = 'sff'
 					await self.send(message)
 				elif action == 2:
-					message.body = 'execfile'
+					message.body = 'sef'
 					await self.send(message)
 				elif action == 9:
 					self.kill(exit_code=1)
@@ -118,16 +118,18 @@ class Peer(Agent):
 		types = ['sff', 'sef', 'rff', 'ref']
 
 		for (index, template) in enumerate(templates):
-			template.set_metadata('type': types[index])
+			template.metadata = {'type': types[index]}
 		
+		menu = self.PeerMenu()
 		sff = self.SenderFindFile()
-		# sef = self.SenderExecuteFile()
+		sef = self.SenderExecuteFile()
 		rff = self.ReceiverFindFile()
-		# ref = self.ReceiverExecuteFile()
+		ref = self.ReceiverExecuteFile()
+		self.add_behaviour(menu)
 		self.add_behaviour(sff, template[0])
-		# self.add_behaviour(sef, template[1])
+		self.add_behaviour(sef, template[1])
 		self.add_behaviour(rff, template[2])
-		# self.add_behaviour(ref, template[3])
+		self.add_behaviour(ref, template[3])
 
 
 if __name__ == '__main__':
