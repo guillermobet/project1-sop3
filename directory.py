@@ -14,12 +14,15 @@ class Directory(Agent):
 			print('\nServer running...')
 
 		async def run(self):
-			message = await self.receive(timeout=1)
+			request = await self.receive(timeout=1)
 			try:
-				if message.body == 'file':
-					print('It\'s file!')
-				elif message.body == 'cpu':
-					print('It\'s cpu!')
+				reply = Message(to=request.sender)
+				if request.body == 'findfile':
+					reply.body = 'ff listened'
+					await self.send(reply)
+				elif request.body == 'execfile':
+					reply.body = 'ef listened'
+					await self.send(reply)
 				else:
 					self.kill(exit_code=1)
 				asyncio.sleep(1)
@@ -31,10 +34,10 @@ class Directory(Agent):
 		self.add_behaviour(self.behaviour)
 
 if __name__ == '__main__':
-	peer = Directory('foo', 'bar')
+	peer = Directory('directoryserver@jabb3r.org', 'dirserver')
 	peer.start()
 
-	while not peer.behaviour.is_killed():
+	while peer.is_alive():
 		try:
 			time.sleep(1)
 		except KeyboardInterrupt:
