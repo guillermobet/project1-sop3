@@ -126,10 +126,10 @@ class Peer(Agent):
 		rff = self.ReceiverFindFile()
 		ref = self.ReceiverExecuteFile()
 		self.add_behaviour(menu)
-		self.add_behaviour(sff, template[0])
-		self.add_behaviour(sef, template[1])
-		self.add_behaviour(rff, template[2])
-		self.add_behaviour(ref, template[3])
+		self.add_behaviour(sff, templates[0])
+		self.add_behaviour(sef, templates[1])
+		self.add_behaviour(rff, templates[2])
+		self.add_behaviour(ref, templates[3])
 
 
 if __name__ == '__main__':
